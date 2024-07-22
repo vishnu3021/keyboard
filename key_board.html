@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .md{
+            border: 2px solid white;
+            height: 100vh;
+            width: 90vw;
+            display: flex;
+            border-radius: 20px;
+            margin-left: 30px;
+            margin-top: 30px;
+            background-color:black;
+            flex-wrap:wrap;
+        }
+        .esc,.f1,.f2,.f3,.f4,.f5,.f6,.f7,.f8,.f9,.f10,.f11,.f12,.f13,.f14,.f15,.f16,.f17,.f18{
+            border: 2px solid white;
+            height: 20px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left: 16px;
+            margin-top:70px;
+            padding:5px;
+            background-color:silver;
+            
+        }
+        .md2{
+            display: flex;
+            margin-top:-180px;
+            margin-left: 0px;
+            padding: 2px;
+            text-align: center;
+           
+        }
+        .s2,.s1,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.plus,.backspace,.num,.sl,.star{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:16px;
+            margin-top:120px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+        }
+        .sign,.hyphen,.minus{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:16px;
+            margin-top:120px;
+            background-color:silver;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+        }
+       
+        .backspace{
+            height: 40px;
+            width: 100px;
+        }
+        p, h2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .md3{
+            display: flex;
+            margin-top:-230px;
+            margin-left: 10px;
+        }
+        .tab,.q,.w,.e,.r,.t,.y,.u,.i,.p,.sy,.bs,.o7,.o8,.o9,.plus2,.bs{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left: 16px;
+            margin-top:160px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }  
+        .tab{
+            height: 40px;
+            width: 90px;
+        } 
+        .plus2{
+            height: 120px;
+
+        }
+        .bs{
+            width: 50px;
+        }
+        .md4{
+            display: flex;
+            margin-top:-250px;
+            margin-left: 10px;
+        }
+        .caps_lock,.a,.s,.d,.f,.g,.h,.j,.k,.l,.dot,.dot2,.enter,.o4,.o5,.o6{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-top: 110px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .caps_lock{
+            width: 80px;
+        }
+        .enter{
+            width: 70px;
+        }
+        .md5{
+            display: flex;
+            margin-top:-230px;
+            margin-left: 10px;
+        }
+        .shift,.z,.x,.c,.v,.b,.n,.m,.comma,.shift2,.g1,.g2,.g3,.enter2{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-top:100px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .shift{
+            width: 120px;
+            
+        }
+        .shift2{
+            width: 170px;
+        }
+        .enter2{
+            height: 120px;
+
+        }
+        .md6{
+            display: flex;
+            margin-top:-270px;
+            margin-left: 10px; 
+        }
+        .crtl,.fn,.window,.alt,.space,.alt2,.ctrl2,.arrowl,.arrowr,.del{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-top:120px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .space{
+            width: 380px;
+        }
+        .o{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-top:160px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .p1{
+            border: 2px solid white;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-top:100px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            border: 2px solid white;
+            height: 40px;
+            width: 80px;
+            border-radius: 10px;
+            margin-top:120px;
+            margin-left: 15px;
+            padding:5px;
+            background-color:silver;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .top{
+            border: 2px solid white;
+            height: 15px;
+            width: 30px;
+            border-radius: 10px;
+            margin-left: 16px;
+            margin-top:120px;
+            padding:5px;
+            background-color:silver;
+        }
+        .down{
+            border: 2px solid white;
+            height: 15px;
+            width: 30px;
+            border-radius: 10px;
+            margin-left: -43px;
+            margin-top:150px;
+            margin-right:2pxpx;
+            padding:5px;
+            background-color:silver;
+        }
+        .mouse{
+            border: 2px solid white;
+            border-radius: 5%;
+            color: grey;
+            height: 200px;
+            width: 250px;
+            background-color: white;
+            margin-left: -580px;
+            margin-top: 200px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="md">
+       <p class="esc">esc</p>
+       <p class="f1">f1</p>
+       <p class="f2">f2</p>
+       <p class="f3">f3</p>
+       <p class="f4">f4</p>
+       <p class="f5">f5</p>
+       <p class="f6">f6</p>
+       <p class="f7">f7</p>
+       <p class="f8">f8</p>
+       <p class="f9">f9</p>
+       <p class="f10">f10</p>
+       <p class="f11">f11</p>
+       <p class="f12">f12</p>
+       <p class="f13">prt sc</p>
+       <p class="f14">delete</p>
+       <p class="f15">home</p>
+       <p class="f16">end</p>
+       <p class="f17">pg up</p>
+       <p class="f18">pg dn</p>
+
+<div class="md2">
+        <h2 class="sign">`~</h2>
+        <h2 class="s1">1</h2>
+        <h2 class="s2">2</h2>
+        <h2 class="s3">3</h2>
+        <h2 class="s4">4</h2>
+        <h2 class= "s5">5</h2>
+        <h2 class="s6">6</h2>
+        <h2 class="s7">7</h2>
+        <h2 class="s8">8</h2>
+        <h2 class="s9">9</h2>
+        <h2 class="s10">0</h2>
+        <h2 class="hyphen">-_</h2>
+        <p class="plus">=</p>
+        <p class="backspace">Backspace</p>
+        <p class="num">num<br>lock</p>
+        <h1 class="sl">/</h1>
+        <h1 class="star">*</h1>
+        <h1 class="minus">-</h1>
+    </div>
+    <div class="md3">
+        <h2 class="tab">tab</h2>
+        <h2 class="q">Q</h2>
+        <h2 class="w">W</h2>
+        <h2 class="e">E</h2>
+        <h2 class="r">R</h2>
+        <h2 class="t">T</h2>
+        <h2 class="y">Y</h2>
+        <h2 class="u">U</h2>
+        <h2 class="i">I</h2>
+        <h2 class="o">O</h2>
+        <h2 class="p">P</h2>
+        <h4 class="sy">{<br>[</h4>
+        <h4 class="sy">}<br>]</h4>
+        <h2 class="bs">|\</h2>
+        <h2 class="o7">7</h2>
+        <h1 class="o8">8</h1>
+        <h1 class="o9">9</h1>
+        <h1 class="plus2">+</h1>
+    </div>
+    <div class="md4">
+        <h3 class="caps_lock">caps lock</h3>
+        <h2 class="a">A</h2>
+        <h2 class="s">S</h2>
+        <h2 class="d">D</h2>
+        <h2 class="f">F</h2>
+        <h2 class="g">G</h2>
+        <h2 class="h">H</h2>
+        <h2 class="j">J</h2>
+        <h2 class="k">K</h2>
+        <h2 class="l">L</h2>
+        <h3 class="dot">:<BR>;</h2>
+        <h4 class="dot2">"<BR>'</h4>
+        <h2 class="enter">Enter</h2>
+        <h2 class="o4">4</h2>
+        <h2 class="o5">5</h2>
+        <h1 class="o6">6</h1>
+    </div>
+    <div class="md5">
+        <h3 class="shift">shift</h3>
+        <h2 class="z">Z</h2>
+        <h2 class="x">X</h2>
+        <h2 class="c">C</h2>
+        <h2 class="v">V</h2>
+        <h2 class="b">B</h2>
+        <h2 class="n">N</h2>
+        <h2 class="m">M</h2>
+        <h2 class="comma">,</h2>
+        <h2 class="p1">.</h2>
+        <h3 class="shift2">shift</h2>
+        <h2 class="g1">1</h2>
+        <h2 class="g2">2</h2>
+        <h2 class="g3">3</h2>
+        <h4 class="enter2">enter</h4>
+    </div>
+    <div class="md6">
+        <h3 class="crtl">ctrl</h3>
+        <h2 class="fn">fn</h2>
+        <h2 class="window"><i class="fa fa-windows" style="font-size:24px"></i></h2>
+        <h2 class="alt">alt</h2>
+        <h2 class="space"></h2>
+        <h2 class="alt2">alt</h2>
+        <h2 class="ctrl2">ctrl</h2>
+        <h2 class="arrowl"><</h2>
+        <p class="top">^</p>
+        <p class="down">down</p>
+        <h2 class="arrowr">></h2>
+        <h2 class="circle">0</h2>
+        <h3 class="del">.</h2>
+            <div class="mouse">mouse</div>
+    </div>
+       
+       
+      
+
+
+
+
+
+    </div>
+</body>
+</html>
